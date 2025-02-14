@@ -6,7 +6,7 @@
         var secondLargest:Int?=null
         for(num in arr){
             if(num > largest){
-                secondLargest=largest
+                //secondLargest=largest
                 largest=num
             }else if(num> (secondLargest ?: Int.MIN_VALUE) && num <largest){
                 secondLargest=num
