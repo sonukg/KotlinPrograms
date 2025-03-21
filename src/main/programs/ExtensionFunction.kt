@@ -10,10 +10,13 @@ fun String.isPalindrome():Boolean{
 fun Int.isEven():Boolean{
     return this % 2==0
 }
-
+fun Int.isOdd():Boolean{
+    return this % 2!==0
+}
 fun main(){
     val word="madam"
     val number=10
     println(word.isPalindrome())
     println(number.isEven())
+    println(number.isOdd())
 }

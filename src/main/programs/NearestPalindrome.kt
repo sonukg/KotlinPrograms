@@ -17,5 +17,6 @@ fun nearestPalindrome(n: Int): Int {
 
 fun main() {
     val num = 123
+    println("Is Palindrome: ${isPalindrome(num)}")
     println("Nearest Palindrome: ${nearestPalindrome(num)}")
 }
