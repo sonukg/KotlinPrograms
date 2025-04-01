@@ -1,4 +1,4 @@
-
+package strings
 fun isPalindromeString(str: String): Boolean {
     val cleanStr = str.lowercase()  // Convert to lowercase for case-insensitivity
     val length = cleanStr.length

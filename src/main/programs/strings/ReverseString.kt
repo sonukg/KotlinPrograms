@@ -1,3 +1,5 @@
+package strings
+
 fun main(){
     //write a program to print the reverse of a given string
     var str = "Sonu"
