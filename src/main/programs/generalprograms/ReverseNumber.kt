@@ -1,3 +1,5 @@
+package generalprograms
+
 fun main() {
     var num = 12345
     var rev = 0

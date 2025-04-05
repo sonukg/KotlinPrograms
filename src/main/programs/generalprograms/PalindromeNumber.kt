@@ -1,3 +1,5 @@
+package generalprograms
+
 fun main() {
     //find palindrome using reversed function
     val str = "121"
@@ -9,7 +11,7 @@ fun main() {
     }
 
     val num=121
-    println("Palindrome Number:"+isPalindromeNumber(num))
+    println("Palindrome Number:"+ isPalindromeNumber(num))
 }
 
 fun isPalindromeNumber(n:Int): Boolean {
