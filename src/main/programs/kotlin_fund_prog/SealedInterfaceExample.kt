@@ -1,4 +1,4 @@
-
+package kotlin_fund_prog
 //Introduced in Kotlin 1.5, a sealed interface is similar to a sealed class but represents a
 // restricted set of implementations of an interface.
 
@@ -15,10 +15,10 @@ data class Bike(override val name:String, override val model:String, override va
 fun describevehicle(vehicle:Vehicle){
     when(vehicle){
         is Car -> {
-            println("Car name is ${vehicle.name} and model is ${vehicle.model} and year is ${vehicle.year}")
+            println("kotlin_fund_prog.Car name is ${vehicle.name} and model is ${vehicle.model} and year is ${vehicle.year}")
         }
         is Bike -> {
-            println("Bike name is ${vehicle.name} and model is ${vehicle.model} and year is ${vehicle.year} and color is ${vehicle.color}")
+            println("kotlin_fund_prog.Bike name is ${vehicle.name} and model is ${vehicle.model} and year is ${vehicle.year} and color is ${vehicle.color}")
         }
 
         else -> {}

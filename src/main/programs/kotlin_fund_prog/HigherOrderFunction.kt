@@ -1,3 +1,5 @@
+package kotlin_fund_prog
+
 fun main() {
 var result1=add(2,4)
     print(result1)

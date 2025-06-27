@@ -22,6 +22,9 @@ fun isPalindromeNumber(n:Int): Boolean {
         reversedNum = reversedNum * 10 + digit
         num /= 10
     }
-    return n == reversedNum
+    return n>=0 && n == reversedNum
+    // also check for negative numbers
+    // return n >= 0 && n == reversedNum
+
 }
 

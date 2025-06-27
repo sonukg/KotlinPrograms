@@ -16,5 +16,21 @@ fun numberOfOccurences(){
 
 fun main(){
     numberOfOccurences()
+    println("-------------------")
+    numberOfOccurence()
+}
+
+fun numberOfOccurence() {
+    var arr=intArrayOf(2,2,3,3,4,4,5,5,7)
+    var occurence=mutableMapOf<Int,Int>()
+
+    for(i in arr){
+        if(occurence.containsKey(i)){
+            occurence[i]=occurence[i]!!+1
+        }else{
+            occurence[i]=1
+        }
+    }
+    println(occurence)
 }
 

@@ -1,7 +1,7 @@
 package Leetcode100Challenge
 /*Day 6 of 100 Days LeetCode Challenge
 LeetCode Challenge #1. Two Sum
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Given an array of integers nums and an integer target, return indices of the two numbers such that they kotlin_fund_prog.add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -49,4 +49,19 @@ fun twoSum(nums:IntArray, target:Int):IntArray{
         }
     }
     return index
+}
+
+// solve this using easy and optimal solution
+fun twoSumOptimal(nums: IntArray, target: Int): IntArray {
+    val numToIndex = mutableMapOf<Int, Int>()
+
+    for (i in nums.indices) {
+        val complement = target - nums[i]
+        if (numToIndex.containsKey(complement)) {
+            return intArrayOf(numToIndex[complement]!!, i)
+        }
+        numToIndex[nums[i]] = i
+    }
+
+    throw IllegalArgumentException("No two sum solution")
 }

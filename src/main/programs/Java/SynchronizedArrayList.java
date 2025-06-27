@@ -15,7 +15,7 @@ public class SynchronizedArrayList {
         namesList.add("Python");
         namesList.add("C");
         namesList.add("Ruby");
-        //add, remove - we don't need explicit synchronization
+        //kotlin_fund_prog.add, remove - we don't need explicit synchronization
         //to fetch/traverse the values from this List -- we have to use explicit synchronization
         synchronized (namesList) {
             Iterator<String> it = namesList.iterator();
@@ -29,7 +29,7 @@ public class SynchronizedArrayList {
         empList.add("Jay");
         empList.add("John");
         empList.add("Raju");
-        //we don't need explicit synchronization for any operation: add/remove/traverse
+        //we don't need explicit synchronization for any operation: kotlin_fund_prog.add/remove/traverse
         Iterator<String> it = empList.iterator();
         while(it.hasNext())
         {

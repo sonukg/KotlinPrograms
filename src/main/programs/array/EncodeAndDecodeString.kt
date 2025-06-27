@@ -55,7 +55,7 @@ class EncodeAndDecodeString {
                 stringBuilder.append(charIntegerValue.toInt().toChar())
                 i++
             }
-            resultList.add(stringBuilder.toString())
+            resultList.kotlin_fund_prog.add(stringBuilder.toString())
             stringBuilder.clear()
             i++
         }
