@@ -1,0 +1,23 @@
+package java_thread;
+
+public class RunnableExtendExample {
+    public static void main(String[] args){
+        RunnableThreadExtendDemo threadExtendDemo=new RunnableThreadExtendDemo();
+        threadExtendDemo.start();
+    }
+
+    public static class RunnableThreadExtendDemo extends Thread{
+
+        @Override
+        public void run() {
+            System.out.println("My Thread is running");
+            try{
+                System.out.println("My thread is sleeping for 10 seconds");
+                Thread.sleep(1000);
+            } catch (Exception e) {
+                System.out.println("My Thread is interrupted");
+            }
+            System.out.println("My Thread is exiting");
+        }
+    }
+}
