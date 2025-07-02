@@ -13,6 +13,7 @@ sealed class SealedClassResult{
     object Loading:SealedClassResult()
 }
 
+
 fun HandlerResult(result: SealedClassResult){
     when(result){
         is SealedClassResult.Success -> {
@@ -31,4 +32,12 @@ fun main(){
     HandlerResult(SealedClassResult.Success("Success"))
     HandlerResult(SealedClassResult.Error("Error"))
     HandlerResult(SealedClassResult.Loading)
+}
+
+
+//another way of declare the sealed class
+sealed class Result<out T: Any>{
+    data class Success<out T: Any>(val data: T): Result<T>()
+    data class Error(val exception: Exception): Result<Nothing>()
+    object Loading: Result<Nothing>()
 }
