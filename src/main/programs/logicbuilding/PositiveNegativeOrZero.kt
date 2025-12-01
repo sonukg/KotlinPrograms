@@ -1,12 +1,12 @@
 package logicbuilding
 //Take a number and print whether it’s positive, negative, or zero.
 
-    fun number(number: Int){
-        if (number>0){
+    fun number(number: Int) {
+        if (number > 0) {
             println("Positive")
-        }else if (number<0){
+        } else if (number < 0) {
             println("Negative")
-        }else{
+        } else {
             println("Zero")
         }
 
