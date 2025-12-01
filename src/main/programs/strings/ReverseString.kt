@@ -107,5 +107,17 @@ fun main(){
     var i10 = str23.length - 1
     while (i10 >= 0) {
         str24 += str23[i10]
+    }
+val revStr="Sonu Kumar"
+    val revRes=reverseString(revStr)
+    println(revRes)
+}
 
-}}
+
+fun reverseString(str:String):String{
+    var reverseStr=""
+    for (i in str.length-1 downTo 0){
+        reverseStr += str[i]
+    }
+    return reverseStr
+}

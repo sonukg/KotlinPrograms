@@ -1,6 +1,6 @@
 package strings
 
-fun main() {
+/*fun strings.main() {
     val str="Android is open source"
 
     val words=str.split(" ")
@@ -16,11 +16,11 @@ fun main() {
     }
 
     println(result.toString())
-}
+}*/
 
 //without using split function
-/*
-fun kotlin_fund_prog.main() {
+
+fun main() {
     var a="Sonu Kumar"
     var reverse=""
     var b=""
@@ -39,7 +39,7 @@ fun kotlin_fund_prog.main() {
     }
     b+=c
     println(b)
-}*/
+}
 
 // make a function to reverse words in a string
 fun reverseWordsInString(input: String): String {

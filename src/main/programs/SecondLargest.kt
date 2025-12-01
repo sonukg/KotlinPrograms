@@ -6,7 +6,7 @@
         var secondLargest:Int?=null
         for(num in arr){
             if(num > largest){
-                //secondLargest=largest
+                secondLargest=largest
                 largest=num
             }else if(num> (secondLargest ?: Int.MIN_VALUE) && num <largest){
                 secondLargest=num
@@ -21,7 +21,7 @@
         val arr1= intArrayOf(1,4,5,2,6,72,22)
         var largest1=Int.MIN_VALUE
         var secondLargest1:Int?=null
-        for(num in arr1){
+        for(num in arr){
             if(num > largest1){
                // secondLargest1=largest1
                 largest1=num
@@ -38,9 +38,11 @@
         var thirdLarges2:Int?=null
         for(num in arr){
             if(num > largest2){
-                secondLargest2=largest
+                thirdLarges2=secondLargest2
+                secondLargest2=largest2
                 largest2=num
             }else if(num> (secondLargest2 ?: Int.MIN_VALUE) && num <largest2){
+                thirdLarges2=secondLargest2
                 secondLargest2=num
 
             }else if (num>(thirdLarges2 ?: Int.MIN_VALUE) && num < secondLargest2 ?: Int.MIN_VALUE && num < largest2){
