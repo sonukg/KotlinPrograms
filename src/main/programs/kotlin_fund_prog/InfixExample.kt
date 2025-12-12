@@ -10,5 +10,5 @@ infix fun Int.printSmallest(x:Int){
 }
 
 fun main(){
-    2 printSmallest 5
+    4 printSmallest 5
 }

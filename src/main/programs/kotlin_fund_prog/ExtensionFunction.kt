@@ -1,4 +1,6 @@
-package kotlin_fund_prog//An extension function allows you to kotlin_fund_prog.add new functionality to an existing class without
+package kotlin_fund_prog
+
+//An extension function allows you to kotlin_fund_prog.add new functionality to an existing class without
 // modifying its source code.
 
 //It is defined outside the class but can be called as if it were a member of the class.
