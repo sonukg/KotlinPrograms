@@ -32,8 +32,8 @@ Only one valid answer exists.
 fun main(){
     var arr= intArrayOf(2,7,11,15)
     var target=9
-    var twoSum= twoSum(arr,target)
-    println("Indices [${twoSum[0]},${twoSum[1]}]")
+    var twoSum1= twoSum(arr,target)
+    println("Indices [${twoSum1[0]},${twoSum1[1]}]")
 }
 
 fun twoSum(nums:IntArray, target:Int):IntArray{

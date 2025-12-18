@@ -1,4 +1,4 @@
-//ascendion
+package generalprograms//ascendion
 
 fun main(){
     val num = 29
@@ -11,7 +11,6 @@ fun isPrime(num: Int):Boolean {
     if (num < 2){
         return false
     }
-
     for (i in 2..num /2){
         if (num % i==0){
             return false

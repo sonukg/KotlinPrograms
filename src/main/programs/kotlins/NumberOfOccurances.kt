@@ -1,4 +1,4 @@
-//techjays
+package kotlins//techjays
 
 fun numberOfOccurences(){
     val arr= intArrayOf(5,6,7,8,2,4,3,5,2,4,5,6,7,4,3,5,6)
